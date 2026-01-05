@@ -4,10 +4,10 @@
 	"Disabled": false,
 	"IsGlobal": false,
 	"Name": "PythonRun",
-	"Author": "",
+	"Author": "yetsing",
 	"Version": "1.0.0",
 	"Language": "csharp",
-	"Website": "",
+	"Website": "https://github.com/yetsing/PowerToysRun-PythonRun",
 	"ExecuteFileName": "Community.PowerToys.Run.Plugin.PythonRun.dll",
 	"IcoPathDark": "Images\\PythonRun.dark.png",
 	"IcoPathLight": "Images\\PythonRun.light.png"
