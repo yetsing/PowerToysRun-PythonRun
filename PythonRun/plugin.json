@@ -1,0 +1,14 @@
+{
+	"ID": "de278e77e39f4d90bbd91f44022f4917",
+	"ActionKeyword": "px",
+	"Disabled": false,
+	"IsGlobal": false,
+	"Name": "PythonRun",
+	"Author": "",
+	"Version": "1.0.0",
+	"Language": "csharp",
+	"Website": "",
+	"ExecuteFileName": "Community.PowerToys.Run.Plugin.PythonRun.dll",
+	"IcoPathDark": "Images\\PythonRun.dark.png",
+	"IcoPathLight": "Images\\PythonRun.light.png"
+}
