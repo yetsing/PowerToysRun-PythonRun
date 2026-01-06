@@ -5,7 +5,7 @@
 	"IsGlobal": false,
 	"Name": "PythonRun",
 	"Author": "yetsing",
-	"Version": "1.0.0",
+	"Version": "1.1.0",
 	"Language": "csharp",
 	"Website": "https://github.com/yetsing/PowerToysRun-PythonRun",
 	"ExecuteFileName": "Community.PowerToys.Run.Plugin.PythonRun.dll",
