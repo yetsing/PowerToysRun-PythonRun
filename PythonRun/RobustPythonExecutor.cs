@@ -190,27 +190,14 @@ namespace Community.PowerToys.Run.Plugin.PythonRun
             }
 
             code = code.Trim();
-
-            // 如果已经包含 print，直接返回
-            if (System.Text.RegularExpressions.Regex.IsMatch(code, @"\bprint\s*\("))
-            {
-                return code;
-            }
-
-            // 使用 Python 自带的机制来判断是表达式还是语句
-            // 这是最可靠的方法
-            string escapedCode = code
-                .Replace("\\", "\\\\")
-                .Replace("'", "\\'")
-                .Replace("\n", "\\n");
+            code = code.Replace("\"", "\\\"");
 
             return $@"
-try:
-    __result__ = eval('{escapedCode}')
-    if __result__ is not None:
-        print(__result__)
-except: 
-    exec('{escapedCode}')
+code = compile(""{code}"", ""<stdin>"", ""single"")
+value = eval(code)
+if value is not None:
+    import sys
+    sys.displayhook(value)
 ".Trim();
         }
 
